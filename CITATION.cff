@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "contentsequence"
+type: software
+version: "1.0.1"
+abstract: "Bayesian models for measuring the shape of content sequences."
+authors:
+  - name: "Anonymous pending review"
+license: MIT
+repository-code: "https://github.com/content-sequence-paper/contentsequence"
+url: "https://content-sequence-paper.github.io/contentsequence/"
