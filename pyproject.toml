@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contentsequence"
+version = "0.1.0"
+description = "Bayesian models for measuring the shape of content sequences"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = [
+  "bayesian-modeling",
+  "content-analysis",
+  "content-sequence",
+  "functional-data",
+  "narrative-modeling",
+  "pymc",
+  "sequence-analysis",
+  "unstructured-data",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "arviz>=0.20,<1",
+  "numpy>=1.26,<3",
+  "pymc>=5.20,<6",
+  "pytensor>=2.26,<3",
+]
+
+[project.optional-dependencies]
+notebook = [
+  "ipykernel>=6.29",
+  "jupyterlab>=4",
+  "matplotlib>=3.8",
+  "pandas>=2",
+]
+docs = [
+  "furo>=2024.8.6,<2027",
+  "sphinx>=8,<10",
+]
+test = [
+  "pytest>=8,<10",
+]
+dev = [
+  "build>=1.2",
+  "pytest>=8,<10",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["contentsequence*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
