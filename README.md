@@ -5,6 +5,8 @@
 The package is modality-independent and uses [PyMC](https://www.pymc.io/) for
 Bayesian inference and [ArviZ](https://python.arviz.org/) for diagnostics and model comparison.
 
+A full tutorial and API documentation is available at [https://content-sequence-paper.github.io/contentsequence/](https://content-sequence-paper.github.io/contentsequence/)
+
 ## Installation
 1. Set up `python` (minimum python 3.11). We recommend using an environment manager such as `conda` or `uv`.
 2. Download or clone this repository:
